@@ -1,15 +1,12 @@
-slock - simple screen locker
-============================
+# slock - simple screen locker
 simple screen locker utility for X.
 
 
-Requirements
-------------
+## Requirements
 In order to build slock you need the Xlib header files.
 
 
-Installation
-------------
+## Installation
 Edit config.mk to match your local setup (slock is installed into
 the /usr/local namespace by default).
 
@@ -18,7 +15,8 @@ Afterwards enter the following command to build and install slock
 
     make clean install
 
+Make sure to add the pam service `slock` into your /etc/pam.d/
 
-Running slock
--------------
+
+## Running slock
 Simply invoke the 'slock' command. To get out of it, enter your password.
